@@ -1,10 +1,15 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
 
 import com.javarush.november.tretyakova.island.animal.Herbivores;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 
 public class Duck extends Herbivores {
-    protected Duck(Parameters parameters) {
-        super(Parameters.DUCK_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Duck() {
+        this.weight = 1;
+        this.numberCellNoMoreThan = 4;
+        this.satiety = 0.15;
     }
 }

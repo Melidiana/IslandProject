@@ -1,9 +1,14 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
 import com.javarush.november.tretyakova.island.animal.Herbivores;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 
 public class Goat extends Herbivores {
-    protected Goat(Parameters parameters) {
-        super(Parameters.GOAT_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Goat() {
+        this.weight = 60;
+        this.numberCellNoMoreThan = 3;
+        this.satiety = 10;
     }
 }

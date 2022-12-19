@@ -1,5 +1,4 @@
 package com.javarush.november.tretyakova.island.settings;
-
 import java.util.HashMap;
 import java.util.Map;
 

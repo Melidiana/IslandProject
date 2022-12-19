@@ -1,9 +1,14 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
 import com.javarush.november.tretyakova.island.animal.Herbivores;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 
 public class Buffalo extends Herbivores {
-    protected Buffalo(Parameters parameters) {
-        super(Parameters.BUFFALO_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Buffalo() {
+        this.weight = 700;
+        this.numberCellNoMoreThan = 3;
+        this.satiety = 100;
     }
 }

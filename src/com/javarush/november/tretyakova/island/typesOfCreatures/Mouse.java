@@ -1,9 +1,14 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
 import com.javarush.november.tretyakova.island.animal.Herbivores;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 
 public class Mouse extends Herbivores {
-    protected Mouse(Parameters parameters) {
-        super(Parameters.MOUSE_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Mouse() {
+        this.weight = 0.05;
+        this.numberCellNoMoreThan = 1;
+        this.satiety = 0.01;
     }
 }

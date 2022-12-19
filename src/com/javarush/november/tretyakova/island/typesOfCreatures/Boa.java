@@ -1,9 +1,14 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 import com.javarush.november.tretyakova.island.animal.Predators;
 
 public class Boa extends Predators {
-    protected Boa(Parameters parameters) {
-        super(Parameters.BOA_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Boa() {
+        this.weight = 15;
+        this.numberCellNoMoreThan = 1;
+        this.satiety = 3;
     }
 }

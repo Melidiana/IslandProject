@@ -1,9 +1,14 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
-import com.javarush.november.tretyakova.island.animal.Parameters;
 import com.javarush.november.tretyakova.island.animal.Predators;
 
 public class Wolf extends Predators {
-    protected Wolf(Parameters parameters) {
-        super(Parameters.WOLF_PARAMETERS);
+    public double weight;
+    public int numberCellNoMoreThan;
+    public double satiety;
+
+    public Wolf() {
+        this.weight = 50;
+        this.numberCellNoMoreThan = 3;
+        this.satiety = 8;
     }
 }
