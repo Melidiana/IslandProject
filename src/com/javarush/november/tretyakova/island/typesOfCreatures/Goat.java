@@ -1,9 +1,9 @@
 package com.javarush.november.tretyakova.island.typesOfCreatures;
 import com.javarush.november.tretyakova.island.animal.Herbivores;
-import com.javarush.november.tretyakova.island.animal.Parametres;
+import com.javarush.november.tretyakova.island.animal.Parameters;
 
 public class Goat extends Herbivores {
-    protected Goat(Parametres parametres) {
-        super(Parametres.GOAT_PARAMETRES);
+    protected Goat(Parameters parameters) {
+        super(Parameters.GOAT_PARAMETERS);
     }
 }

@@ -1,9 +1,9 @@
 package com.javarush.november.tretyakova.island.animal;
 
 public abstract class Animal {
-    public final Parametres parametres;
+    public final Parameters parameters;
 
-    protected Animal(Parametres parametres) {
-        this.parametres = parametres;
+    protected Animal(Parameters parameters) {
+        this.parameters = parameters;
     }
 }

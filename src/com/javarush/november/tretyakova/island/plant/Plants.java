@@ -1,9 +1,9 @@
 package com.javarush.november.tretyakova.island.plant;
 
 public abstract class Plants {
-    public final PlantParametres plantParametres;
+    public final PlantParameters plantParameters;
 
-    protected Plants(PlantParametres plantParametres) {
-        this.plantParametres = plantParametres;
+    protected Plants(PlantParameters plantParameters) {
+        this.plantParameters = plantParameters;
     }
 }
