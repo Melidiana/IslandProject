@@ -1,18 +1,18 @@
 package com.javarush.november.tretyakova.island.location;
 import com.javarush.november.tretyakova.island.animal.Animal;
-import com.javarush.november.tretyakova.island.enumerator.Type;
+import com.javarush.november.tretyakova.island.enumerator.TypeOfAnimal;
 import com.javarush.november.tretyakova.island.plant.Plants;
-import com.javarush.november.tretyakova.island.typesOfCreatures.*;
+import com.javarush.november.tretyakova.island.typesOfCreature.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
-import static com.javarush.november.tretyakova.island.enumerator.Type.*;
+import static com.javarush.november.tretyakova.island.enumerator.TypeOfAnimal.*;
 
 
 public class Cell {
-    private final Map<Type, List<? extends Animal>> animals = new HashMap<>();
+    private final Map<TypeOfAnimal, List<? extends Animal>> animals = new HashMap<>();
     private final List<Plants> plants = new ArrayList<>();
 
     public Cell() {
@@ -35,7 +35,7 @@ public class Cell {
 
     }
 
-    public Map<Type, List<? extends Animal>> getAnimals() {
+    public Map<TypeOfAnimal, List<? extends Animal>> getAnimals() {
         return animals;
     }
 
@@ -43,7 +43,7 @@ public class Cell {
         return plants;
     }
 
-    private Map<Type, List<? extends Animal>> populateByType(Type name, int times) {
+    private Map<TypeOfAnimal, List<? extends Animal>> populateByType(TypeOfAnimal name, int times) {
         switch (name) {
             case WOLF:
                 List<Wolf> wolves = new ArrayList<>();

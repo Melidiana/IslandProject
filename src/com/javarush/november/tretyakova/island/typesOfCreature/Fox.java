@@ -1,14 +1,14 @@
-package com.javarush.november.tretyakova.island.typesOfCreatures;
+package com.javarush.november.tretyakova.island.typesOfCreature;
 import com.javarush.november.tretyakova.island.animal.Predators;
 
-public class Bear extends Predators {
+public class Fox extends Predators {
     public double weight;
     public int numberCellNoMoreThan;
     public double satiety;
 
-    public Bear() {
-        this.weight = 500;
+    public Fox() {
+        this.weight = 8;
         this.numberCellNoMoreThan = 2;
-        this.satiety = 80;
+        this.satiety = 2;
     }
 }

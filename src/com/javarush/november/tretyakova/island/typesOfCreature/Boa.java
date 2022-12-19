@@ -1,4 +1,4 @@
-package com.javarush.november.tretyakova.island.typesOfCreatures;
+package com.javarush.november.tretyakova.island.typesOfCreature;
 import com.javarush.november.tretyakova.island.animal.Predators;
 
 public class Boa extends Predators {

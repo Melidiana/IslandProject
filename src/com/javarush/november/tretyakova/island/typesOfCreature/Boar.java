@@ -1,14 +1,14 @@
-package com.javarush.november.tretyakova.island.typesOfCreatures;
+package com.javarush.november.tretyakova.island.typesOfCreature;
 import com.javarush.november.tretyakova.island.animal.Herbivores;
 
-public class Deer extends Herbivores {
+public class Boar extends Herbivores {
     public double weight;
     public int numberCellNoMoreThan;
     public double satiety;
 
-    public Deer() {
-        this.weight = 300;
-        this.numberCellNoMoreThan = 4;
+    public Boar() {
+        this.weight = 400;
+        this.numberCellNoMoreThan = 2;
         this.satiety = 50;
     }
 }
