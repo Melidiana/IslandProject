@@ -6,6 +6,7 @@ import com.javarush.november.tretyakova.island.location.LifeCycle;
 import com.javarush.november.tretyakova.island.location.PlantGrowth;
 import com.javarush.november.tretyakova.island.model.IslandGenerator;
 
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,7 @@ public class ApplicationRunner {
     public static int day = 0;
 
     public static void main(String[] args) {
-        ScheduledExecutorService executorLifeCycle = Executors.newScheduledThreadPool(2);
+        ExecutorService executorLifeCycle = Executors.newFixedThreadPool(4);
         ScheduledExecutorService executorPlantGrowth = Executors.newScheduledThreadPool(2);
 
         IslandGenerator islandGenerator = new IslandGenerator();
@@ -30,7 +31,7 @@ public class ApplicationRunner {
             for (Cell[] cells : ISLAND) {
                 for (Cell cell : cells) {
                     executorPlantGrowth.scheduleWithFixedDelay(new PlantGrowth(cell), 1, 1, TimeUnit.SECONDS);
-                    executorLifeCycle.scheduleWithFixedDelay(new LifeCycle(cell), 2, 1, TimeUnit.SECONDS);
+                    executorLifeCycle.submit(new LifeCycle(cell));
                 }
             }
             try {
@@ -41,6 +42,10 @@ public class ApplicationRunner {
             logger.printInfo(day);
             logger.clearFields();
         }
+
+        executorLifeCycle.shutdownNow();
+        executorPlantGrowth.shutdown();
+
         System.out.println(GAME_OVER);
         System.out.printf("All the animals were dead on %d day\n", day);
     }
