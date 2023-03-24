@@ -1,0 +1,173 @@
+row: 2
+column: 2
+breedChance:
+  "WOLF":
+    "HORSE": 10
+    "DEER": 15
+    "RABBIT": 60
+    "MOUSE": 80
+    "GOAT": 60
+    "SHEEP": 70
+    "BOAR": 15
+    "BUFFALO": 10
+    "DUCK": 40
+  "BOA":
+    "FOX": 15
+    "RABBIT": 20
+    "MOUSE": 40
+    "DUCK": 10
+  "FOX":
+    "RABBIT": 70
+    "MOUSE": 90
+    "DUCK": 60
+    "CATERPILLAR": 40
+  "BEAR":
+    "BOA": 80
+    "HORSE": 40
+    "DEER": 80
+    "RABBIT": 80
+    "MOUSE": 90
+    "GOAT": 70
+    "SHEEP": 70
+    "BOAR": 50
+    "BUFFALO": 20
+    "DUCK": 10
+  "EAGLE":
+    "FOX": 10
+    "RABBIT": 90
+    "MOUSE": 90
+    "DUCK": 80
+  "HORSE":
+    "PLANT": 100
+  "DEER":
+    "PLANT": 100
+  "RABBIT":
+    "PLANT": 100
+  "MOUSE":
+    "CATERPILLAR": 90
+    "PLANT": 100
+  "GOAT":
+    "PLANT": 100
+  "SHEEP":
+    "PLANT": 100
+  "BOAR":
+    "MOUSE": 90
+    "CATERPILLAR": 90
+    "PLANT": 100
+  "BUFFALO":
+    "PLANT": 100
+  "DUCK":
+    "CATERPILLAR": 90
+    "PLANT": 100
+  "CATERPILLAR":
+    "PLANT": 100
+organismsParameters:
+  "WOLF":
+    "name": "Wolf"
+    "icon": 🐺
+    "weight": 50
+    "speed": 3
+    "maxFoodRequired": 8
+    "maxCount": 30
+  "BOA":
+    "name": "Boa"
+    "icon": 🐍
+    "weight": 15
+    "speed": 1
+    "maxFoodRequired": 3
+    "maxCount": 30
+  "FOX":
+    "name": "Fox"
+    "icon": 🦊
+    "weight": 8
+    "speed": 2
+    "maxFoodRequired": 2
+    "maxCount": 30
+  "BEAR":
+    "name": "Bear"
+    "icon": 🐻
+    "weight": 500
+    "speed": 2
+    "maxFoodRequired": 80
+    "maxCount": 5
+  "EAGLE":
+    "name": "Eagle"
+    "icon": 🦅
+    "weight": 6
+    "speed": 3
+    "maxFoodRequired": 1
+    "maxCount": 20
+  "HORSE":
+    "name": "Horse"
+    "icon": 🐎
+    "weight": 400
+    "speed": 4
+    "maxFoodRequired": 60
+    "maxCount": 20
+  "DEER":
+    "name": "Deer"
+    "icon": 🦌
+    "weight": 300
+    "speed": 4
+    "maxFoodRequired": 50
+    "maxCount": 20
+  "RABBIT":
+    "name": "Rabbit"
+    "icon": 🐇
+    "weight": 2
+    "speed": 2
+    "maxFoodRequired": 0.45
+    "maxCount": 150
+  "MOUSE":
+    "name": "Mouse"
+    "icon": 🐁
+    "weight": 0.05
+    "speed": 1
+    "maxFoodRequired": 0.01
+    "maxCount": 500
+  "GOAT":
+    "name": "Goat"
+    "icon": 🐐
+    "weight": 60
+    "speed": 3
+    "maxFoodRequired": 10
+    "maxCount": 140
+  "SHEEP":
+    "name": "Sheep"
+    "icon": 🐑
+    "weight": 70
+    "speed": 3
+    "maxFoodRequired": 15
+    "maxCount": 140
+  "BOAR":
+    "name": "Boar"
+    "icon": 🐗
+    "weight": 400
+    "speed": 2
+    "maxFoodRequired": 50
+    "maxCount": 50
+  "BUFFALO":
+    "name": "Buffalo"
+    "icon": 🐃
+    "weight": 700
+    "speed": 3
+    "maxFoodRequired": 100
+    "maxCount": 10
+  "DUCK":
+    "name": "Duck"
+    "icon": 🦆
+    "weight": 1
+    "speed": 4
+    "maxFoodRequired": 0.15
+    "maxCount": 200
+  "CATERPILLAR":
+    "name": "Caterpillar"
+    "icon": 🐛
+    "weight": 0.01
+    "speed": 0
+    "maxFoodRequired": 0
+    "maxCount": 1000
+  "PLANT":
+    "name": "Plant"
+    "icon": 🌿
+    "weight": 1

@@ -1,0 +1,14 @@
+This application is a model of an island with different inhabitants. All residents are divided into
+three groups: predators (bear, boa constrictor, eagle, fox, wolf), herbivores (boar, buffalo, caterpillar, deer, duck, goat,
+Horse, Mouse, Rabbit, Sheep) and plants.
+The island model includes a number of locations (cells), each of which has its own inhabitants.
+When you run the program, each cell gets a random number of random types of inhabitants.
+After each cycle, the following actions take place:
+ - all animals try to eat (if there is their food in the current location);
+ - all animals try to breed (if there are animals of the same type in the location);
+ - all animals (survivors) try to move.
+Animals and plants could be eaten, animals could starve to death (in case the current cell does not contain
+ type of objects that can be considered as food).
+
+ After each tick, we get a Statistical Report, which presents data on the current number of each type of inhabitants
+ of the island, on the number of newborns and deaths, as well as the number of the current day.
